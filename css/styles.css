@@ -8,13 +8,10 @@
   --btn-border-color: #9747ff;
   --secondary-text-color-theme-light: #f4f4fd;
   --btn-border-color-light: #e7e9fc;
-  --secondary-text-color-theme-dark: #4d5ae5;}
-
-body {
-  font-family: var(--font-family);
-  color: var(--primary-text-color-theme-dark);
-  background-color: var(--main-color);
+  --secondary-text-color-theme-dark: #4d5ae5;
 }
+
+/* Default */
 .list {
   list-style: none;
 }
@@ -25,12 +22,78 @@ body {
 
 button {
   cursor: pointer;
-  font-family: inherit;
 }
 
-/* header */
-/* logo */
-.logo {
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/* BODY STYLE */
+body {
+  font-family: var(--font-family);
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--main-color);
+}
+
+/* HEADER */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 76px;
+}
+.menu {
+  display: flex;
+  column-gap: 40px;
+  align-items: flex-end;
+  /* align-items: center; */
+}
+.contact {
+  display: flex;
+  gap: 40px;
+
+  /* align-items: center; */
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo-part-one {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -42,7 +105,7 @@ button {
   color: var(--secondary-text-color-theme-dark);
 }
 
-.logo-part {
+.logo-part-second {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -60,7 +123,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-background-color-theme-dark);
-  
 }
 .menu-list-item:hover,
 .menu-list-item:focus {
@@ -68,6 +130,7 @@ button {
 }
 .contact-item-list {
   font-style: normal;
+  margin-left: auto;
 }
 .contact-item {
   font-style: normal;
@@ -75,8 +138,8 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-left: auto;
   color: var(--primary-text-color-theme-dark);
-  
 }
 .contact-item:hover,
 .contact-item:focus {
@@ -140,8 +203,8 @@ button {
   text-transform: capitalize;
   color: var(--primary-background-color-theme-dark);
 }
+/* Not now  */
 .card-item-style {
- 
 }
 
 /* Section 3 */
@@ -222,5 +285,4 @@ button {
   color: var(--primary-text-color-theme-dark);
 }
 .card-style {
-  
 }
